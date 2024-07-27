@@ -3,23 +3,23 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "yarn install"
+      "command": "cd marketplace && yarn install"
     }
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "start": {
-      "name": "start",
-      "command": "yarn start",
+    "dev": {
+      "name": "dev",
+      "command": "cd marketplace && yarn dev",
       "runAtStart": true,
       "preview": {
-        "port": 8080
+        "port": 9000
       }
     },
     "install": {
       "name": "install dependencies",
-      "command": "yarn install"
+      "command": "cd marketplace && yarn install"
     }
   }
 }
